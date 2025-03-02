@@ -16,7 +16,7 @@ spring:
     hikari:
       max-lifetime: 1800000  # 30 phút
       idle-timeout: 300000   # 5 phút
-    url: jdbc:postgresql://host.docker.internal:5432/effimate_dev?currentSchema=recipient
+    url: jdbc:postgresql://47.130.37.245:5432/effimate_dev?currentSchema=recipients
     driverClassName: org.postgresql.Driver
     username: effimate
-    password: 02102000
+    password: hpz_jbq@dqw_ZHP5ejv
