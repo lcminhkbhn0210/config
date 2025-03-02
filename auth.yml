@@ -1,0 +1,13 @@
+info:
+  app:
+    name: "auth"
+    description: "Auth service"
+    version: "1.0.0"
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    fetchRegistry: true
+    registerWithEureka: true
+    serviceUrl:
+      defaultZone: http://localhost:8070/eureka/
