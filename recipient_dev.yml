@@ -1,0 +1,24 @@
+info:
+  app:
+    name: "recipient"
+    description: "Recipient service"
+    version: "1.0.0"
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    fetchRegistry: true
+    registerWithEureka: true
+    serviceUrl:
+      defaultZone: http://localhost:8070/eureka/
+spring:
+  datasource:
+    hikari:
+      max-lifetime: 1800000  # 30 phút
+      idle-timeout: 300000   # 5 phút
+    url: jdbc:postgresql://localhost:5432/effimate_dev?currentSchema=recipients
+    driverClassName: org.postgresql.Driver
+    username: effimate
+    password: 02102000
+jwt:
+  signerKey: 1TjXchw5FloESb63Kc+DFhTARvpWL4jUGCwfGWxuG5SIf/1y/LgJxHnMqaF6A/ij
